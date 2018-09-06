@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="VideoListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QM5-bv-KJe">
+                        <rect key="frame" x="5" y="5" width="100" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="DGR-S1-E9n"/>
+                            <constraint firstAttribute="height" constant="90" id="K1o-yL-p0X"/>
+                            <constraint firstAttribute="width" secondItem="QM5-bv-KJe" secondAttribute="height" multiplier="10:9" id="xwc-gn-n4n"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频标题三十多岁的故事大算得上是多多说的是" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2z-Hj-qQC">
+                        <rect key="frame" x="113" y="5" width="201" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总时长:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSV-X3-3rJ">
+                        <rect key="frame" x="113" y="34" width="201" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="9ZT-eK-yyi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建时间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFk-xq-iFw">
+                        <rect key="frame" x="113" y="74" width="201" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="dvb-ar-cyS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vFk-xq-iFw" firstAttribute="leading" secondItem="QM5-bv-KJe" secondAttribute="trailing" constant="8" id="2gK-B9-YDu"/>
+                    <constraint firstAttribute="trailing" secondItem="vFk-xq-iFw" secondAttribute="trailing" constant="6" id="Ait-b6-cbm"/>
+                    <constraint firstAttribute="trailing" secondItem="hSV-X3-3rJ" secondAttribute="trailing" constant="6" id="Bdq-uF-5fS"/>
+                    <constraint firstItem="hSV-X3-3rJ" firstAttribute="leading" secondItem="QM5-bv-KJe" secondAttribute="trailing" constant="8" id="DXA-XQ-Og6"/>
+                    <constraint firstItem="QM5-bv-KJe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Tux-cH-IP8"/>
+                    <constraint firstAttribute="trailing" secondItem="x2z-Hj-qQC" secondAttribute="trailing" constant="6" id="acG-Cc-CFQ"/>
+                    <constraint firstItem="x2z-Hj-qQC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="deb-Do-r5j"/>
+                    <constraint firstItem="vFk-xq-iFw" firstAttribute="top" secondItem="hSV-X3-3rJ" secondAttribute="bottom" constant="10" id="h0d-Bu-bHX"/>
+                    <constraint firstItem="QM5-bv-KJe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="lW5-Hg-iOR"/>
+                    <constraint firstAttribute="bottom" secondItem="vFk-xq-iFw" secondAttribute="bottom" constant="4.5" id="mdx-mU-vNx"/>
+                    <constraint firstItem="x2z-Hj-qQC" firstAttribute="leading" secondItem="QM5-bv-KJe" secondAttribute="trailing" constant="8" id="wuB-fr-F35"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="createTime" destination="vFk-xq-iFw" id="zuE-Uv-0pa"/>
+                <outlet property="pic" destination="QM5-bv-KJe" id="Ca6-NI-F0m"/>
+                <outlet property="videoLengh" destination="hSV-X3-3rJ" id="4gS-t2-AFP"/>
+                <outlet property="videoTitle" destination="x2z-Hj-qQC" id="zDx-bO-b3A"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

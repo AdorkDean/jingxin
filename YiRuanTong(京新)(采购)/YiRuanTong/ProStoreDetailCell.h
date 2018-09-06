@@ -1,0 +1,28 @@
+//
+//  ProStoreDetailCell.h
+//  YiRuanTong
+//
+//  Created by apple on 2018/7/18.
+//  Copyright © 2018年 联祥. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "ProStoreDetailModel.h"
+@interface ProStoreDetailCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIButton *btn1;
+@property (strong, nonatomic) IBOutlet UILabel *btn2;
+@property (strong, nonatomic) IBOutlet UITextField *btn3;
+@property (strong, nonatomic) IBOutlet UILabel *btn4;
+@property (strong, nonatomic) IBOutlet UILabel *btn5;
+@property (strong, nonatomic) IBOutlet UILabel *btn6;
+@property (strong, nonatomic) IBOutlet UILabel *btn7;
+@property (strong, nonatomic) IBOutlet UILabel *label1;
+@property (strong, nonatomic) IBOutlet UILabel *label2;
+@property (strong, nonatomic) IBOutlet UILabel *label3;
+@property (strong, nonatomic) IBOutlet UILabel *label4;
+@property (strong, nonatomic) IBOutlet UILabel *label5;
+@property (strong, nonatomic) IBOutlet UILabel *label6;
+@property (strong, nonatomic) IBOutlet UILabel *label7;
+@property (strong,nonatomic) ProStoreDetailModel* model;
+@property (strong,nonatomic) NSString* count;
+@end
